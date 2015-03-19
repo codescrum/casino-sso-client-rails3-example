@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '3.2.14'
 group :assets do
+  gem 'bootstrap-sass', '~> 3.1.1'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
@@ -10,6 +11,12 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'figaro'
 gem 'mongoid'
+
+# Use redis to store Rails Sessions
+gem 'redis-rails'
+# For CAS authentication with SSO example server
+gem 'devise_cas_authenticatable'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
