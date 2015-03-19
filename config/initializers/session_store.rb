@@ -1,8 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-Rails3MongoidDevise::Application.config.session_store :cookie_store, key: '_rails3-mongoid-devise_session'
-
-# Use the database for sessions instead of the cookie-based default,
-# which shouldn't be used to store highly confidential information
-# (create the session table with "rails generate session_migration")
-# Rails3MongoidDevise::Application.config.session_store :active_record_store
+Rails.application.config.session_store :redis_store, redis_server: "redis://127.0.0.1:6379/0/_sso_rails3_example_app_session"
