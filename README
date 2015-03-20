@@ -1,17 +1,11 @@
-Rails3-Mongoid-Devise
-========================
+# SSO Example Client for Rails 3
 
-You can use this project as a starting point for a Rails web application. It requires Rails 3 and uses Mongoid http://mongoid.org/ for data storage and Devise http://github.com/plataformatec/devise for user management and authentication.
-________________________
+##Setup Databases
 
-See the README file on GitHub
+ - Create *mongoid.yml* configuration files from the example file provided.
 
-For more information, please see the updated README file on GitHub:
+    cp mongoid.yml.example mongoid.yml
 
-http://github.com/railsapps/rails3-mongoid-devise
+ - Seed users database
 
-________________________
-
-MIT License
-
-http://www.opensource.org/licenses/mit-license
+    rake db:seed
